@@ -70,7 +70,7 @@ size_t Misc::ahashCode(const char* str, size_t len){
 int64_t Misc::filelength(int filehandle)
 {
     struct cl_stat_t info;
-    if (fileHandleStat(filehandle, &info) == -1)
+    if (fstat(filehandle, &info) == -1)
  	 		return -1;
     return info.st_size;
 }
@@ -474,7 +474,7 @@ std::string Misc::toString(_LUCENE_THREADID_TYPE value){
   }
   return toString(ids[value]);
 }
-/*
+
 std::string Misc::toString(const int32_t value){
   char buf[20];
   TCHAR tbuf[20];
@@ -482,7 +482,7 @@ std::string Misc::toString(const int32_t value){
   STRCPY_TtoA(buf,tbuf,20);
   return buf;
 }
- */
+
 std::string Misc::toString(const int64_t value){
   char buf[20];
   TCHAR tbuf[20];

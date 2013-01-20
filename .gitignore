@@ -9,4 +9,5 @@ bin
 msvc
 build
 build-ios
+test-pad
 ~$*

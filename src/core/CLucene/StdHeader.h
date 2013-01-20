@@ -15,7 +15,7 @@
 
 //configurations for library
 #include "CLucene/CLConfig.h"
-
+#include <cstddef>
 //shared header
 #include "CLucene/SharedHeader.h"
 

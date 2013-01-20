@@ -9,7 +9,7 @@
 
 #include "Equators.h"
 #include "CLucene/LuceneThreads.h"
-
+#undef _CL_HAVE_TR1_UNORDERED_MAP
 #if defined(_CL_HAVE_TR1_UNORDERED_MAP) && defined(_CL_HAVE_TR1_UNORDERED_SET)
 	#include <tr1/unordered_map>
 	#include <tr1/unordered_set>

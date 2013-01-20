@@ -6,8 +6,7 @@
 ------------------------------------------------------------------------------*/
 #ifndef _LuceneThreads_h
 #define  _LuceneThreads_h
-
-
+#include "sys/types.h"
 CL_NS_DEF(util)
 class CLuceneThreadIdCompare;
 
