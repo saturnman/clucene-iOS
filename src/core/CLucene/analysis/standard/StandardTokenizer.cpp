@@ -149,7 +149,11 @@ CL_NS_DEF2(analysis,standard)
         continue;
       } else if (SPACE) {
         continue;
-      } else if (ALPHA || UNDERSCORE) {
+          
+      }else if ( _CJK ){
+          t = ReadCJK(ch,t);
+          if ( t != NULL ) return t;
+      }else if (ALPHA || UNDERSCORE) {
         tokenStart = rdPos;
         t = ReadAlphaNum(ch,t);
         if ( t != NULL) return t;
@@ -292,7 +296,7 @@ CL_NS_DEF2(analysis,standard)
 		  str.appendChar(prev);
 		  int ch = prev;
 
-		  CONSUME_CJK;
+		  //CONSUME_CJK;
 	  }
 	  return setToken(t,&str,CL_NS2(analysis,standard)::CJK);
   }
@@ -450,7 +454,6 @@ CL_NS_DEF2(analysis,standard)
       ** token; shave trailing ampersand and revert to ALPHANUM. */
       CND_PRECONDITION(RIGHTMOST_IS(str, '&'),"ReadCompany failed");
       SHAVE_RIGHTMOST(str);
-
 
 	    return setToken(t,&str,CL_NS2(analysis,standard)::ALPHANUM);
     }

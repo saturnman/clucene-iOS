@@ -37,7 +37,7 @@
         #define _tcscat wcscat //copy a string onto the end of the other string
     		#define _tcsncat wcsncat
         #define _tcschr wcschr //find location of one character
-        #define _tcsstr wcsstr //find location of a string
+        #define _tcsstr std::wcsstr //find location of a string
         #define _tcslen wcslen //get length of a string
         #define _tcscmp wcscmp //case sensitive compare two strings
         #define _tcsncmp wcsncmp //case sensitive compare two strings

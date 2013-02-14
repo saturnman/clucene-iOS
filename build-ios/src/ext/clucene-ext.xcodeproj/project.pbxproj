@@ -1,0 +1,795 @@
+// !$*UTF8*$!
+{
+       archiveVersion = 1;
+       classes = {
+       };
+       objectVersion = 46;
+       objects = {
+
+/* Begin PBXAggregateTarget section */
+              39E9359292D749C186A41A83 /* ALL_BUILD */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = EA6F18DB10EC43749F4903D2 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+                     buildPhases = (
+                            E3333D02EEE34E5FBAF05112 /* CMake Rules */,
+                     );
+                     dependencies = (
+                            0D41AA64FFE84A288E1BF2B0 /* PBXTargetDependency */,
+                     );
+                     name = ALL_BUILD;
+                     productName = ALL_BUILD;
+              };
+              8603CEAB401340469FC78873 /* RUN_TESTS */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = 7799672FDD0848B3A2669E46 /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */;
+                     buildPhases = (
+                            EE5E0E74BF40443785AC45FA /* CMake PostBuild Rules */,
+                     );
+                     dependencies = (
+                     );
+                     name = RUN_TESTS;
+                     productName = RUN_TESTS;
+              };
+              C2DFEEFAB5F14A628111BB0E /* ZERO_CHECK */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = 30A4279DCB2940C2B513F53D /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+                     buildPhases = (
+                            1ADE2F9E46224ECA91B53FF3 /* CMake Rules */,
+                     );
+                     dependencies = (
+                     );
+                     name = ZERO_CHECK;
+                     productName = ZERO_CHECK;
+              };
+              5BBC40ED36134A15A27AFB8C /* install */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = 000F36D21A51467894EE31F5 /* Build configuration list for PBXAggregateTarget "install" */;
+                     buildPhases = (
+                            CA476F36E28949088731259D /* CMake PostBuild Rules */,
+                     );
+                     dependencies = (
+                            A1B946463D204BBB9FE1482F /* PBXTargetDependency */,
+                     );
+                     name = install;
+                     productName = install;
+              };
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildStyle section */
+              2DB49E7575C94CC6B3993EDE /*  */ = {
+                     isa = PBXBuildStyle;
+              };
+              A1DF956A577449779E3684E7 /* Debug */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = Debug;
+              };
+              21C48C6C94D14023BE2A4DF9 /* Release */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = Release;
+              };
+              E8E10BE556C04DA7AEDCB8FD /* MinSizeRel */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = MinSizeRel;
+              };
+              36F951A4D36445C3939BC447 /* RelWithDebInfo */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = RelWithDebInfo;
+              };
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+              AB1393DFDF3443EEAF12DE00 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = DBE4009F0EA94B9980809F6C /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = C2DFEEFAB5F14A628111BB0E;
+                     remoteInfo = ZERO_CHECK;
+              };
+              A3FA9DB8E0F04FE7951158ED /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = DBE4009F0EA94B9980809F6C /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 39E9359292D749C186A41A83;
+                     remoteInfo = ALL_BUILD;
+              };
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+58E5B2EC0B6A47DC9A62D5D3 /* /Users/saturnman/projects/clucene-core-2.3.3.4/src/ext/CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.text"; name = "CMakeLists.txt"; path = "CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+              0D6CEE16576040D385FB3221  = {
+                     isa = PBXGroup;
+                     children = (
+                            F0D0DB558BAB44FABF48F3F1 /* Sources */,
+                            F651380DFCAF4F538DB3A3EF /* Resources */,
+                            FB477C9781DF424E9F6F9135 /* Products */,
+                     );
+                     sourceTree = "<group>";
+              };
+              F0D0DB558BAB44FABF48F3F1 /* Sources */ = {
+                     isa = PBXGroup;
+                     children = (
+                            BD2C1E34C7604C0185C106B1 /* ALL_BUILD */,
+                            C26FAEB4FBC34572A4DBF135 /* ZERO_CHECK */,
+                     );
+                     name = Sources;
+                     sourceTree = "<group>";
+              };
+              F651380DFCAF4F538DB3A3EF /* Resources */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = Resources;
+                     sourceTree = "<group>";
+              };
+              BD2C1E34C7604C0185C106B1 /* ALL_BUILD */ = {
+                     isa = PBXGroup;
+                     children = (
+                            727AFA051A924365A17A2462 /* CMake Rules */,
+                            58E5B2EC0B6A47DC9A62D5D3 /* /Users/saturnman/projects/clucene-core-2.3.3.4/src/ext/CMakeLists.txt */,
+                     );
+                     name = ALL_BUILD;
+                     sourceTree = "<group>";
+              };
+              727AFA051A924365A17A2462 /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              C26FAEB4FBC34572A4DBF135 /* ZERO_CHECK */ = {
+                     isa = PBXGroup;
+                     children = (
+                            FAB78B886FFE43DCADEC52CF /* CMake Rules */,
+                            58E5B2EC0B6A47DC9A62D5D3 /* /Users/saturnman/projects/clucene-core-2.3.3.4/src/ext/CMakeLists.txt */,
+                     );
+                     name = ZERO_CHECK;
+                     sourceTree = "<group>";
+              };
+              FAB78B886FFE43DCADEC52CF /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              FB477C9781DF424E9F6F9135 /* Products */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = Products;
+                     sourceTree = "<group>";
+              };
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+              DBE4009F0EA94B9980809F6C /* Project object */ = {
+                     isa = PBXProject;
+                     attributes = {
+                            BuildIndependentTargetsInParallel = YES;
+                     };
+                     buildConfigurationList = 67B5D3F9F02C43BEA632B728 /* Build configuration list for PBXProject  "clucene-ext" */;
+                     buildSettings = {
+                     };
+                     buildStyles = (
+                            A1DF956A577449779E3684E7 /* Debug */,
+                            21C48C6C94D14023BE2A4DF9 /* Release */,
+                            E8E10BE556C04DA7AEDCB8FD /* MinSizeRel */,
+                            36F951A4D36445C3939BC447 /* RelWithDebInfo */,
+                     );
+                     compatibilityVersion = "Xcode 3.2";
+                     hasScannedForEncodings = 0;
+                     mainGroup = 0D6CEE16576040D385FB3221;
+                     projectDirPath = "../../../src/ext";
+                     projectRoot = "";
+                     targets = (
+                            39E9359292D749C186A41A83 /* ALL_BUILD */,
+                            8603CEAB401340469FC78873 /* RUN_TESTS */,
+                            C2DFEEFAB5F14A628111BB0E /* ZERO_CHECK */,
+                            5BBC40ED36134A15A27AFB8C /* install */,
+                     );
+              };
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+              549AC070923648829DFE193C /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              E3333D02EEE34E5FBAF05112 /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/saturnman/projects/clucene-core-2.3.3.4/build-ios/src/ext -f /Users/saturnman/projects/clucene-core-2.3.3.4/build-ios/src/ext/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              4F96C82AACE74E98893FDEE9 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              EE5E0E74BF40443785AC45FA /* CMake PostBuild Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake PostBuild Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/saturnman/projects/clucene-core-2.3.3.4/build-ios/src/ext -f /Users/saturnman/projects/clucene-core-2.3.3.4/build-ios/src/ext/CMakeScripts/RUN_TESTS_postBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              8757547B85934AE1BE0BDD49 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              1ADE2F9E46224ECA91B53FF3 /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/saturnman/projects/clucene-core-2.3.3.4/build-ios/src/ext -f /Users/saturnman/projects/clucene-core-2.3.3.4/build-ios/src/ext/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              D93AD619950F414786FDB8B3 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              CA476F36E28949088731259D /* CMake PostBuild Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake PostBuild Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/saturnman/projects/clucene-core-2.3.3.4/build-ios/src/ext -f /Users/saturnman/projects/clucene-core-2.3.3.4/build-ios/src/ext/CMakeScripts/install_postBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+              0D41AA64FFE84A288E1BF2B0 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = C2DFEEFAB5F14A628111BB0E /* ZERO_CHECK */;
+                     targetProxy = AB1393DFDF3443EEAF12DE00 /* PBXContainerItemProxy */;
+              };
+              A1B946463D204BBB9FE1482F /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 39E9359292D749C186A41A83 /* ALL_BUILD */;
+                     targetProxy = A3FA9DB8E0F04FE7951158ED /* PBXContainerItemProxy */;
+              };
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+              0BEDD1712AFF44AFAEF563ED /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = armv7;
+                            SDKROOT = "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk";
+                            SYMROOT = "/Users/saturnman/projects/clucene-core-2.3.3.4/build-ios/src/ext/build";
+                     };
+                     name = Debug;
+              };
+              E60960F157E14609A0469C68 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = armv7;
+                            SDKROOT = "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk";
+                            SYMROOT = "/Users/saturnman/projects/clucene-core-2.3.3.4/build-ios/src/ext/build";
+                     };
+                     name = Release;
+              };
+              EDF711F4B8A74FFB8EA52B99 /* MinSizeRel */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = armv7;
+                            SDKROOT = "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk";
+                            SYMROOT = "/Users/saturnman/projects/clucene-core-2.3.3.4/build-ios/src/ext/build";
+                     };
+                     name = MinSizeRel;
+              };
+              89E3D1A2D34042FB9DCC04A3 /* RelWithDebInfo */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = armv7;
+                            SDKROOT = "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk";
+                            SYMROOT = "/Users/saturnman/projects/clucene-core-2.3.3.4/build-ios/src/ext/build";
+                     };
+                     name = RelWithDebInfo;
+              };
+              80A5FA05ECD644C49FB8859B /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = armv7;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/saturnman/projects/clucene-core-2.3.3.4/src/shared", "/Users/saturnman/projects/clucene-core-2.3.3.4/build-ios/src/shared", "/Users/saturnman/projects/clucene-core-2.3.3.4/src/core", /opt/local/include, );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = "";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/saturnman/projects/clucene-core-2.3.3.4/build-ios/src/ext";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              3697D3C0FEF0469CB9949038 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = armv7;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/saturnman/projects/clucene-core-2.3.3.4/src/shared", "/Users/saturnman/projects/clucene-core-2.3.3.4/build-ios/src/shared", "/Users/saturnman/projects/clucene-core-2.3.3.4/src/core", /opt/local/include, );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = "";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/saturnman/projects/clucene-core-2.3.3.4/build-ios/src/ext";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              0870AD747DD345F29C2A2719 /* MinSizeRel */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = armv7;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/saturnman/projects/clucene-core-2.3.3.4/src/shared", "/Users/saturnman/projects/clucene-core-2.3.3.4/build-ios/src/shared", "/Users/saturnman/projects/clucene-core-2.3.3.4/src/core", /opt/local/include, );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = "";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/saturnman/projects/clucene-core-2.3.3.4/build-ios/src/ext";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = MinSizeRel;
+              };
+              2EFB5B6B639E4032BAC7F468 /* RelWithDebInfo */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = armv7;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/saturnman/projects/clucene-core-2.3.3.4/src/shared", "/Users/saturnman/projects/clucene-core-2.3.3.4/build-ios/src/shared", "/Users/saturnman/projects/clucene-core-2.3.3.4/src/core", /opt/local/include, );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = "";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/saturnman/projects/clucene-core-2.3.3.4/build-ios/src/ext";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = RelWithDebInfo;
+              };
+              72F626AE05ED467AA0A9AA86 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = armv7;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/saturnman/projects/clucene-core-2.3.3.4/src/shared", "/Users/saturnman/projects/clucene-core-2.3.3.4/build-ios/src/shared", "/Users/saturnman/projects/clucene-core-2.3.3.4/src/core", /opt/local/include, );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = "";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = RUN_TESTS;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/saturnman/projects/clucene-core-2.3.3.4/build-ios/src/ext";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              6355004CE5B54F7DA92C5943 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = armv7;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/saturnman/projects/clucene-core-2.3.3.4/src/shared", "/Users/saturnman/projects/clucene-core-2.3.3.4/build-ios/src/shared", "/Users/saturnman/projects/clucene-core-2.3.3.4/src/core", /opt/local/include, );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = "";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = RUN_TESTS;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/saturnman/projects/clucene-core-2.3.3.4/build-ios/src/ext";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              F03DB0A3F95B49FEA8C3E425 /* MinSizeRel */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = armv7;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/saturnman/projects/clucene-core-2.3.3.4/src/shared", "/Users/saturnman/projects/clucene-core-2.3.3.4/build-ios/src/shared", "/Users/saturnman/projects/clucene-core-2.3.3.4/src/core", /opt/local/include, );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = "";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = RUN_TESTS;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/saturnman/projects/clucene-core-2.3.3.4/build-ios/src/ext";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = MinSizeRel;
+              };
+              B7183561CF7A469496C355EE /* RelWithDebInfo */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = armv7;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/saturnman/projects/clucene-core-2.3.3.4/src/shared", "/Users/saturnman/projects/clucene-core-2.3.3.4/build-ios/src/shared", "/Users/saturnman/projects/clucene-core-2.3.3.4/src/core", /opt/local/include, );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = "";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = RUN_TESTS;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/saturnman/projects/clucene-core-2.3.3.4/build-ios/src/ext";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = RelWithDebInfo;
+              };
+              484F708F2EB54AF38DD129DA /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = armv7;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/saturnman/projects/clucene-core-2.3.3.4/src/shared", "/Users/saturnman/projects/clucene-core-2.3.3.4/build-ios/src/shared", "/Users/saturnman/projects/clucene-core-2.3.3.4/src/core", /opt/local/include, );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = "";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/saturnman/projects/clucene-core-2.3.3.4/build-ios/src/ext";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              34E51F68249646999022D843 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = armv7;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/saturnman/projects/clucene-core-2.3.3.4/src/shared", "/Users/saturnman/projects/clucene-core-2.3.3.4/build-ios/src/shared", "/Users/saturnman/projects/clucene-core-2.3.3.4/src/core", /opt/local/include, );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = "";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/saturnman/projects/clucene-core-2.3.3.4/build-ios/src/ext";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              D513E1AEE3D14D91B129B9F8 /* MinSizeRel */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = armv7;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/saturnman/projects/clucene-core-2.3.3.4/src/shared", "/Users/saturnman/projects/clucene-core-2.3.3.4/build-ios/src/shared", "/Users/saturnman/projects/clucene-core-2.3.3.4/src/core", /opt/local/include, );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = "";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/saturnman/projects/clucene-core-2.3.3.4/build-ios/src/ext";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = MinSizeRel;
+              };
+              873E1EABDD9D4A28AFB6A706 /* RelWithDebInfo */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = armv7;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/saturnman/projects/clucene-core-2.3.3.4/src/shared", "/Users/saturnman/projects/clucene-core-2.3.3.4/build-ios/src/shared", "/Users/saturnman/projects/clucene-core-2.3.3.4/src/core", /opt/local/include, );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = "";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/saturnman/projects/clucene-core-2.3.3.4/build-ios/src/ext";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = RelWithDebInfo;
+              };
+              A79D23321EE8475F9AD89F05 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = armv7;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/saturnman/projects/clucene-core-2.3.3.4/src/shared", "/Users/saturnman/projects/clucene-core-2.3.3.4/build-ios/src/shared", "/Users/saturnman/projects/clucene-core-2.3.3.4/src/core", /opt/local/include, );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = "";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = install;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/saturnman/projects/clucene-core-2.3.3.4/build-ios/src/ext";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              A87DD7BF75184438A8F54962 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = armv7;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/saturnman/projects/clucene-core-2.3.3.4/src/shared", "/Users/saturnman/projects/clucene-core-2.3.3.4/build-ios/src/shared", "/Users/saturnman/projects/clucene-core-2.3.3.4/src/core", /opt/local/include, );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = "";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = install;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/saturnman/projects/clucene-core-2.3.3.4/build-ios/src/ext";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              213AEE2FF436423592F3A28B /* MinSizeRel */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = armv7;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/saturnman/projects/clucene-core-2.3.3.4/src/shared", "/Users/saturnman/projects/clucene-core-2.3.3.4/build-ios/src/shared", "/Users/saturnman/projects/clucene-core-2.3.3.4/src/core", /opt/local/include, );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = "";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = install;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/saturnman/projects/clucene-core-2.3.3.4/build-ios/src/ext";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = MinSizeRel;
+              };
+              AE4091D4F4A14F578799AD05 /* RelWithDebInfo */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = armv7;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/saturnman/projects/clucene-core-2.3.3.4/src/shared", "/Users/saturnman/projects/clucene-core-2.3.3.4/build-ios/src/shared", "/Users/saturnman/projects/clucene-core-2.3.3.4/src/core", /opt/local/include, );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = "";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = install;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/saturnman/projects/clucene-core-2.3.3.4/build-ios/src/ext";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = RelWithDebInfo;
+              };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+              67B5D3F9F02C43BEA632B728 /* Build configuration list for PBXProject  "clucene-ext" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            0BEDD1712AFF44AFAEF563ED /* Debug */,
+                            E60960F157E14609A0469C68 /* Release */,
+                            EDF711F4B8A74FFB8EA52B99 /* MinSizeRel */,
+                            89E3D1A2D34042FB9DCC04A3 /* RelWithDebInfo */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              EA6F18DB10EC43749F4903D2 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            80A5FA05ECD644C49FB8859B /* Debug */,
+                            3697D3C0FEF0469CB9949038 /* Release */,
+                            0870AD747DD345F29C2A2719 /* MinSizeRel */,
+                            2EFB5B6B639E4032BAC7F468 /* RelWithDebInfo */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              7799672FDD0848B3A2669E46 /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            72F626AE05ED467AA0A9AA86 /* Debug */,
+                            6355004CE5B54F7DA92C5943 /* Release */,
+                            F03DB0A3F95B49FEA8C3E425 /* MinSizeRel */,
+                            B7183561CF7A469496C355EE /* RelWithDebInfo */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              30A4279DCB2940C2B513F53D /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            484F708F2EB54AF38DD129DA /* Debug */,
+                            34E51F68249646999022D843 /* Release */,
+                            D513E1AEE3D14D91B129B9F8 /* MinSizeRel */,
+                            873E1EABDD9D4A28AFB6A706 /* RelWithDebInfo */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              000F36D21A51467894EE31F5 /* Build configuration list for PBXAggregateTarget "install" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            A79D23321EE8475F9AD89F05 /* Debug */,
+                            A87DD7BF75184438A8F54962 /* Release */,
+                            213AEE2FF436423592F3A28B /* MinSizeRel */,
+                            AE4091D4F4A14F578799AD05 /* RelWithDebInfo */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+/* End XCConfigurationList section */
+       };
+       rootObject = DBE4009F0EA94B9980809F6C;
+}

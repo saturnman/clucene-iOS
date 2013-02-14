@@ -120,10 +120,29 @@ CL_NS_USE(util)
   }
 
   void IndexInput::readChars( TCHAR* buffer, const int32_t start, const int32_t len) {
-    const int32_t end = start + len;
-    TCHAR b;
-    for (int32_t i = start; i < end; ++i) {
-      b = readByte();
+      const int32_t end = start + len;
+      TCHAR b;
+      for (int32_t i = start; i < end; ++i) {
+          b = readByte();
+          
+          if ((b & 0x80) == 0) {
+              b = (b & 0x7F);
+          } else if ((b & 0xE0) != 0xE0) {
+              b = (((b & 0x1F) << 6)
+                   | (readByte() & 0x3F));
+          } else {
+              b = ((b & 0x0F) << 12) | ((readByte() & 0x3F) << 6);
+              b |= (readByte() & 0x3F);
+          }
+           
+          buffer[i] = b;
+      }
+      
+    //const int32_t end = start + len;
+    //TCHAR b;
+    //for (int32_t i = start; i < end; ++i) {
+    //  b = readByte();
+        /*
       if ((b & 0x80) == 0) {
         b = (b & 0x7F);
       } else if ((b & 0xE0) != 0xE0) {
@@ -133,8 +152,9 @@ CL_NS_USE(util)
 		  b = ((b & 0x0F) << 12) | ((readByte() & 0x3F) << 6);
 		  b |= (readByte() & 0x3F);
       }
-      buffer[i] = b;
-	}
+         */
+    //  buffer[i] = b;
+	//}
   }
 
 

@@ -135,6 +135,7 @@ QueryParser::~QueryParser(){
 CL_NS(search)::Query* QueryParser::parse(const TCHAR* q, const TCHAR* f, CL_NS(analysis)::Analyzer* a){
   QueryParser* qp = _CLNEW QueryParser(f, a);
   CL_NS(search)::Query* qry = qp->parse(q);
+    qry->toString();
   _CLDELETE(qp);
   return qry;
 }
@@ -155,7 +156,7 @@ Query* QueryParser::parse(const TCHAR* _query)
       const size_t errLen = _tcslen(_twhat) + _tcslen(_query) + 20;  // make sure we have enough room for our error message
       TCHAR *err = _CL_NEWARRAY(TCHAR,errLen);
       cl_stprintf(err, errLen, _T("Cannot parse '%s': %s"), _query,_twhat);
-      _CLTHROWT_DEL(CL_ERR_Parse, err);
+        _CLTHROWT_DEL(CL_ERR_Parse, err);
     } else if (e.number()==CL_ERR_TooManyClauses) {
       const size_t errLen = _tcslen(_query) + 25; // make sure we have enough room for our error message
       TCHAR *err = _CL_NEWARRAY(TCHAR,errLen);

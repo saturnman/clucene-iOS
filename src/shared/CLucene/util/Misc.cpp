@@ -9,7 +9,7 @@
 #include <assert.h>
 #include <iostream>
 #include <map>
-
+#include "iconv.h"
 #if defined(_CL_HAVE_SYS_TIME_H)
 # include <sys/time.h>
 #elif defined(_CL_HAVE_TIME_H)
@@ -127,14 +127,21 @@ wchar_t* Misc::_charToWide(const char* s){
 }
 
 void Misc::_cpywideToChar(const wchar_t* s, char* d, size_t len){
-    size_t sLen = wcslen(s);
+    //size_t sLen = wcslen(s);
+    /*
     for ( uint32_t i=0;i<len&&i<sLen+1;i++ )
         d[i] = LUCENE_OOR_CHAR(s[i]);
+     */
+    size_t ret = lucene_wcstoutf8(d,s,len);
 }
 void Misc::_cpycharToWide(const char* s, wchar_t* d, size_t len){
+    /*
     size_t sLen = strlen(s);
+    
     for ( uint32_t i=0;i<len&&i<sLen+1;i++ )
       d[i] = s[i];
+     */
+    size_t ret = lucene_utf8towcs(d,s,len);
 }
 #endif
 
@@ -466,6 +473,7 @@ bool Misc::listFiles(const char* directory, std::vector<std::string>& files, boo
 std::string Misc::toString(const bool value){
   return value ? "true" : "false";
 }
+
 std::string Misc::toString(_LUCENE_THREADID_TYPE value){
   static int32_t nextindex = 0;
   static std::map<_LUCENE_THREADID_TYPE, int32_t> ids;
@@ -482,6 +490,7 @@ std::string Misc::toString(const int32_t value){
   STRCPY_TtoA(buf,tbuf,20);
   return buf;
 }
+ 
 
 std::string Misc::toString(const int64_t value){
   char buf[20];

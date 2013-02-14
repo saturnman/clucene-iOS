@@ -67,7 +67,7 @@ CL_NS_DEF(util)
 
   static std::string toString(const int32_t value);
   static std::string toString(const int64_t value);
-      
+  
   static std::string toString(const _LUCENE_THREADID_TYPE value);
   
 
