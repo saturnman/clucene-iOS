@@ -1,3 +1,12 @@
+ATTENTION!
+I myself is not maintainer of clucene project. I put this project here just for 
+others convenience as I have built it successfully on iOS and you may also need 
+this.
+
+The project itself is ok and at you end, you may need to setup some directory and
+prepare corpus for testing your project. I have passed all test suite on my size 
+and you should have little problem to use it directly. Enjoy!
+
 CLucene README
 ==============
 
